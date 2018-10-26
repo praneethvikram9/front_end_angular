@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class MovieService {
 
-  public url = "https://api.themoviedb.org/3/movie/550?api_key=a11a51e2627becc9456d9ef4db35443f";
+  public url = "https://api.themoviedb.org/3/movie/upcoming?api_key=a11a51e2627becc9456d9ef4db35443f";
 
   constructor(private http: HttpClient) { }
 

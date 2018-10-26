@@ -7,6 +7,10 @@ import { SearchDummyComponent } from './search-dummy/search-dummy.component';
 import { MovieViewComponent } from './movie-view/movie-view.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { MovieService } from './movie.service';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +22,10 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
