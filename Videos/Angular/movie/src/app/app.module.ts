@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MovieService } from './movie.service';
 import { RouterModule } from '@angular/router';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { RouterModule } from '@angular/router';
     SearchComponent,
     SearchDummyComponent,
     MovieViewComponent,
-    MovieListComponent
+    MovieListComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,
