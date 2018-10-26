@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MovieService } from './movie.service';
 import { RouterModule } from '@angular/router';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { UpdateComponent } from './update/update.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     SearchDummyComponent,
     MovieViewComponent,
     MovieListComponent,
-    WishlistComponent
+    WishlistComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ export class MovieService {
 
   public url2 ="http://localhost:8099/api/v1/movie/add";
   public url3 ="http://localhost:8099/api/v1/movie/show";
+  public url4="http://localhost:8099/api/v1/movie"
   constructor(private http: HttpClient) { }
 
   getMovies():Observable<any>{
@@ -24,6 +25,12 @@ export class MovieService {
   }
   getAllMovie():Observable<any>{
     return this.http.get(this.url3);
+  }
+  delete(id):Observable<any>{
+    return this.http.delete(this.url4+"/"+id);
+  }
+  update(id:string,movie:Movie) : Observable<any>{
+    return this.http.put(this.url4+"/"+id,movie);
   }
 
 }
