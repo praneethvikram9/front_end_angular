@@ -1,0 +1,12 @@
+.card-container{
+    display: flex;
+    flex-wrap: row;
+}
+
+
+
+md-card {
+    max-width: 30%;
+    margin: 4px;
+
+    }
